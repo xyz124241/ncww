@@ -1,0 +1,18 @@
+name: NeptuneCommandWhitelist
+version: '${project.version}'
+main: de.neptune.ncw.NcwPlugin
+api-version: '26.1'
+depend: [LuckPerms]
+authors: [Neptune]
+description: Command-Whitelist und Rechte-Verwaltung pro LuckPerms-Rang mit GUI
+
+commands:
+  ncw:
+    description: Neptune Command Whitelist
+    aliases: [nwc, neptunewhitelist]
+    usage: /ncw help
+
+permissions:
+  ncw.admin:
+    description: Voller Zugriff auf alles (umgeht die Whitelist)
+    default: op
